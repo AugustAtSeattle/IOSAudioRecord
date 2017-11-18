@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		974A70991FBFAF84006368E7 /* GStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974A70981FBFAF84006368E7 /* GStreamer.framework */; };
+		974A70EC1FBFB67C006368E7 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 974A70EB1FBFB67C006368E7 /* libiconv.tbd */; };
+		9774A1B71FBFA5B8002A39AA /* GStreamerBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = 9774A1B51FBFA5B8002A39AA /* GStreamerBackend.m */; };
 		97DF4A101FBE4A6C00E8D6A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DF4A0F1FBE4A6C00E8D6A8 /* AppDelegate.swift */; };
 		97DF4A121FBE4A6C00E8D6A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DF4A111FBE4A6C00E8D6A8 /* ViewController.swift */; };
 		97DF4A151FBE4A6C00E8D6A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97DF4A131FBE4A6C00E8D6A8 /* Main.storyboard */; };
@@ -16,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		974A70981FBFAF84006368E7 /* GStreamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GStreamer.framework; path = ../../Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework; sourceTree = "<group>"; };
+		974A70EB1FBFB67C006368E7 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		9774A1B41FBFA5B7002A39AA /* RecordExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RecordExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		9774A1B51FBFA5B8002A39AA /* GStreamerBackend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GStreamerBackend.m; sourceTree = "<group>"; };
+		9774A1B61FBFA5B8002A39AA /* GStreamerBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GStreamerBackend.h; sourceTree = "<group>"; };
 		97DF4A0C1FBE4A6C00E8D6A8 /* RecordExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97DF4A0F1FBE4A6C00E8D6A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97DF4A111FBE4A6C00E8D6A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				974A70EC1FBFB67C006368E7 /* libiconv.tbd in Frameworks */,
+				974A70991FBFAF84006368E7 /* GStreamer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9774A1B81FBFA66E002A39AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				974A70EB1FBFB67C006368E7 /* libiconv.tbd */,
+				974A70981FBFAF84006368E7 /* GStreamer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		97DF4A031FBE4A6C00E8D6A8 = {
 			isa = PBXGroup;
 			children = (
 				97DF4A0E1FBE4A6C00E8D6A8 /* RecordExample */,
 				97DF4A0D1FBE4A6C00E8D6A8 /* Products */,
+				9774A1B81FBFA66E002A39AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +76,8 @@
 		97DF4A0E1FBE4A6C00E8D6A8 /* RecordExample */ = {
 			isa = PBXGroup;
 			children = (
+				9774A1B61FBFA5B8002A39AA /* GStreamerBackend.h */,
+				9774A1B51FBFA5B8002A39AA /* GStreamerBackend.m */,
 				97DF4A0F1FBE4A6C00E8D6A8 /* AppDelegate.swift */,
 				97DF4A111FBE4A6C00E8D6A8 /* ViewController.swift */,
 				97DF4A131FBE4A6C00E8D6A8 /* Main.storyboard */,
@@ -63,6 +85,7 @@
 				97DF4A1B1FBE4A6C00E8D6A8 /* LaunchScreen.storyboard */,
 				97DF4A1E1FBE4A6C00E8D6A8 /* Info.plist */,
 				97DF4A161FBE4A6C00E8D6A8 /* RecordExample.xcdatamodeld */,
+				9774A1B41FBFA5B7002A39AA /* RecordExample-Bridging-Header.h */,
 			);
 			path = RecordExample;
 			sourceTree = "<group>";
@@ -99,6 +122,7 @@
 				TargetAttributes = {
 					97DF4A0B1FBE4A6C00E8D6A8 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -142,6 +166,7 @@
 				97DF4A181FBE4A6C00E8D6A8 /* RecordExample.xcdatamodeld in Sources */,
 				97DF4A121FBE4A6C00E8D6A8 /* ViewController.swift in Sources */,
 				97DF4A101FBE4A6C00E8D6A8 /* AppDelegate.swift in Sources */,
+				9774A1B71FBFA5B8002A39AA /* GStreamerBackend.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,12 +303,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RBYTJ3E632;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"~/Library/Developer/GStreamer/iPhone.sdk\"",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				HEADER_SEARCH_PATHS = "\"~/Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework/Headers\"";
 				INFOPLIST_FILE = RecordExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = August.RecordExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RecordExample/RecordExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -293,12 +326,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RBYTJ3E632;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"~/Library/Developer/GStreamer/iPhone.sdk\"",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				HEADER_SEARCH_PATHS = "\"~/Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework/Headers\"";
 				INFOPLIST_FILE = RecordExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = August.RecordExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RecordExample/RecordExample-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

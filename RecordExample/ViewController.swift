@@ -17,6 +17,8 @@ class ViewController: UIViewController  , AVAudioRecorderDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let backend = GStreamerBackend();
+        print(backend.getGStreamerVersion())
 //  get the path of recording.m4a in the simulator
 //        #if arch(i386) || arch(x86_64)
 //            let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as! NSString
