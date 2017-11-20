@@ -3,3 +3,5 @@
 //
 
 #import "GStreamerBackend.h"
+#import "GStreamerBackendDelegate.h"
+#import "gst_ios_init.h"

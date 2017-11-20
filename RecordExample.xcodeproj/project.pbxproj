@@ -8,8 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		974A70991FBFAF84006368E7 /* GStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974A70981FBFAF84006368E7 /* GStreamer.framework */; };
-		974A70EC1FBFB67C006368E7 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 974A70EB1FBFB67C006368E7 /* libiconv.tbd */; };
 		9774A1B71FBFA5B8002A39AA /* GStreamerBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = 9774A1B51FBFA5B8002A39AA /* GStreamerBackend.m */; };
+		977B920C1FC369B2008A1204 /* gst_ios_init.m in Sources */ = {isa = PBXBuildFile; fileRef = 977B920B1FC369B2008A1204 /* gst_ios_init.m */; };
+		977B920F1FC37482008A1204 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977B920E1FC37472008A1204 /* Foundation.framework */; };
+		977B92111FC374C3008A1204 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977B92101FC3749E008A1204 /* UIKit.framework */; };
+		977B92131FC374E0008A1204 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977B92121FC374D4008A1204 /* CoreGraphics.framework */; };
+		977B92171FC37603008A1204 /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 977B92161FC37603008A1204 /* libiconv.2.tbd */; };
+		977B92191FC37C4E008A1204 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977B92181FC37C45008A1204 /* VideoToolbox.framework */; };
+		977B921B1FC37CAD008A1204 /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 977B921A1FC37CAD008A1204 /* libresolv.9.tbd */; };
+		977B92201FC37CF8008A1204 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 977B921C1FC37CCA008A1204 /* libstdc++.6.0.9.tbd */; };
+		977B92221FC37D68008A1204 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977B92211FC37D58008A1204 /* AssetsLibrary.framework */; };
 		97DF4A101FBE4A6C00E8D6A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DF4A0F1FBE4A6C00E8D6A8 /* AppDelegate.swift */; };
 		97DF4A121FBE4A6C00E8D6A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DF4A111FBE4A6C00E8D6A8 /* ViewController.swift */; };
 		97DF4A151FBE4A6C00E8D6A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97DF4A131FBE4A6C00E8D6A8 /* Main.storyboard */; };
@@ -24,6 +32,20 @@
 		9774A1B41FBFA5B7002A39AA /* RecordExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RecordExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		9774A1B51FBFA5B8002A39AA /* GStreamerBackend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GStreamerBackend.m; sourceTree = "<group>"; };
 		9774A1B61FBFA5B8002A39AA /* GStreamerBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GStreamerBackend.h; sourceTree = "<group>"; };
+		977B920A1FC369B0008A1204 /* gst_ios_init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gst_ios_init.h; sourceTree = "<group>"; };
+		977B920B1FC369B2008A1204 /* gst_ios_init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gst_ios_init.m; sourceTree = "<group>"; };
+		977B920D1FC36A8A008A1204 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		977B920E1FC37472008A1204 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		977B92101FC3749E008A1204 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		977B92121FC374D4008A1204 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		977B92141FC375EE008A1204 /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
+		977B92161FC37603008A1204 /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
+		977B92181FC37C45008A1204 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		977B921A1FC37CAD008A1204 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		977B921C1FC37CCA008A1204 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		977B921E1FC37CE7008A1204 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		977B92211FC37D58008A1204 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		97C06BAE1FBFBE1200FEF4B5 /* GStreamerBackendDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GStreamerBackendDelegate.h; sourceTree = "<group>"; };
 		97DF4A0C1FBE4A6C00E8D6A8 /* RecordExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97DF4A0F1FBE4A6C00E8D6A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97DF4A111FBE4A6C00E8D6A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +61,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				974A70EC1FBFB67C006368E7 /* libiconv.tbd in Frameworks */,
+				977B92221FC37D68008A1204 /* AssetsLibrary.framework in Frameworks */,
+				977B92201FC37CF8008A1204 /* libstdc++.6.0.9.tbd in Frameworks */,
+				977B92191FC37C4E008A1204 /* VideoToolbox.framework in Frameworks */,
+				977B92171FC37603008A1204 /* libiconv.2.tbd in Frameworks */,
+				977B92131FC374E0008A1204 /* CoreGraphics.framework in Frameworks */,
+				977B921B1FC37CAD008A1204 /* libresolv.9.tbd in Frameworks */,
+				977B92111FC374C3008A1204 /* UIKit.framework in Frameworks */,
+				977B920F1FC37482008A1204 /* Foundation.framework in Frameworks */,
 				974A70991FBFAF84006368E7 /* GStreamer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +79,16 @@
 		9774A1B81FBFA66E002A39AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				977B92211FC37D58008A1204 /* AssetsLibrary.framework */,
+				977B921E1FC37CE7008A1204 /* libstdc++.tbd */,
+				977B921C1FC37CCA008A1204 /* libstdc++.6.0.9.tbd */,
+				977B921A1FC37CAD008A1204 /* libresolv.9.tbd */,
+				977B92181FC37C45008A1204 /* VideoToolbox.framework */,
+				977B92161FC37603008A1204 /* libiconv.2.tbd */,
+				977B92141FC375EE008A1204 /* libiconv.2.4.0.tbd */,
+				977B92121FC374D4008A1204 /* CoreGraphics.framework */,
+				977B92101FC3749E008A1204 /* UIKit.framework */,
+				977B920E1FC37472008A1204 /* Foundation.framework */,
 				974A70EB1FBFB67C006368E7 /* libiconv.tbd */,
 				974A70981FBFAF84006368E7 /* GStreamer.framework */,
 			);
@@ -78,6 +117,7 @@
 			children = (
 				9774A1B61FBFA5B8002A39AA /* GStreamerBackend.h */,
 				9774A1B51FBFA5B8002A39AA /* GStreamerBackend.m */,
+				97C06BAE1FBFBE1200FEF4B5 /* GStreamerBackendDelegate.h */,
 				97DF4A0F1FBE4A6C00E8D6A8 /* AppDelegate.swift */,
 				97DF4A111FBE4A6C00E8D6A8 /* ViewController.swift */,
 				97DF4A131FBE4A6C00E8D6A8 /* Main.storyboard */,
@@ -86,6 +126,9 @@
 				97DF4A1E1FBE4A6C00E8D6A8 /* Info.plist */,
 				97DF4A161FBE4A6C00E8D6A8 /* RecordExample.xcdatamodeld */,
 				9774A1B41FBFA5B7002A39AA /* RecordExample-Bridging-Header.h */,
+				977B920A1FC369B0008A1204 /* gst_ios_init.h */,
+				977B920D1FC36A8A008A1204 /* PrefixHeader.pch */,
+				977B920B1FC369B2008A1204 /* gst_ios_init.m */,
 			);
 			path = RecordExample;
 			sourceTree = "<group>";
@@ -167,6 +210,7 @@
 				97DF4A121FBE4A6C00E8D6A8 /* ViewController.swift in Sources */,
 				97DF4A101FBE4A6C00E8D6A8 /* AppDelegate.swift in Sources */,
 				9774A1B71FBFA5B8002A39AA /* GStreamerBackend.m in Sources */,
+				977B920C1FC369B2008A1204 /* gst_ios_init.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +354,9 @@
 					"\"~/Library/Developer/GStreamer/iPhone.sdk\"",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "\"~/Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework/Headers\"";
 				INFOPLIST_FILE = RecordExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -333,6 +380,9 @@
 					"\"~/Library/Developer/GStreamer/iPhone.sdk\"",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "\"~/Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework/Headers\"";
 				INFOPLIST_FILE = RecordExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -9,16 +9,23 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController  , AVAudioRecorderDelegate {
+class ViewController: UIViewController  , AVAudioRecorderDelegate , GStreamerBackendDelegate {
 
     @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet weak var play_button: UIButton!
+    @IBOutlet weak var pause_button: UIButton!
+    var gst_backend : GStreamerBackend!
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let backend = GStreamerBackend();
-        print(backend.getGStreamerVersion())
+        play_button.isEnabled = true;
+        pause_button.isEnabled = true;
+        
+        gst_backend = GStreamerBackend(self)
+           // GStreamerBackend((url: audioFilename, settings: settings)?
+
 //  get the path of recording.m4a in the simulator
 //        #if arch(i386) || arch(x86_64)
 //            let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as! NSString
@@ -84,5 +91,34 @@ class ViewController: UIViewController  , AVAudioRecorderDelegate {
             finishRecording(success: false)
         }
     }
+    
+    @IBAction func play(_ sender: UIButton) {
+        
+        gst_backend.play()
+    }
+    
+    @IBAction func pause(_ sender: UIButton) {
+        
+        gst_backend.pause()
+    }
+    
+    /*
+     * Methods from GstreamerBackendDelegate
+     */
+    func gstreamerSetUIMessage(_ message: String!) {
+        DispatchQueue.main.async {
+        }
+    }
+    
+    func gstreamerInitialized()
+    {
+        print("Init Gtreamer")
+        DispatchQueue.main.async {
+            self.play_button.isEnabled = true;
+            self.pause_button.isEnabled = true;
+        }
+        
+    }
+    
 }
 
